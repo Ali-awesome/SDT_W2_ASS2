@@ -45,11 +45,11 @@ const displayplayers = (players) => {
                       "Description is not available") + "..."
                   }</p>
                   <div class="social">
-                    <a href=${
-                      player.strTwitter
+                    <a target="_blank" href=${
+                      player.strTwitter || "www.instagram.com/ingstagram10"
                     }><i class="fa-brands fa-twitter fs-3 me-2"></i></a>
-                    <a href=${
-                      player.strInstagram
+                    <a target="_blank" href=${
+                      player.strInstagram || "www.instagram.com/ingstagram10"
                     }><i class="fa-brands fa-instagram fs-3 me-2"></i></a>
                   </div>
               </div>
