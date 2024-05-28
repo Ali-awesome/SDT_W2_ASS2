@@ -1,0 +1,29 @@
+body {
+  background-image: url(images/russia-background-in-modern-style-with-traditional-russian-culture-M83Y51.jpg);
+  object-fit: fill;
+}
+.logo {
+  width: 40%;
+}
+.btn {
+  background-color: #01383b !important;
+  color: white !important;
+}
+.heading {
+  color: #01383b;
+}
+footer {
+  background-color: #01383b;
+  color: white;
+}
+#cart {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+}
+.container-fluid {
+  display: flex;
+  flex-wrap: wrap;
+}
+

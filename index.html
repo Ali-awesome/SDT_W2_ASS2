@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PlayerDB</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="files/bootstrap.min.css" />
+    <script
+      src="https://kit.fontawesome.com/a89616daaf.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container mx-auto mt-4 position-relative row">
+          <div class="col-4">
+            <div class="d-flex align-items-center">
+              <button
+                class="navbar-toggler me-3"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <a class="navbar-brand mx-3 mx-md-0" href="#">
+                <img class="img-fluid logo" src="images/dream-team-stamp-graphic-red-color-vector-45744981.png" alt="logo" />
+              </a>
+            </div>
+          </div>
+          <div
+            class="col-8 collapse navbar-collapse d-flex justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link fs-5 fw-bold" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-5 fw-bold" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-5 fw-bold" href="#">Pages</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-5 fw-bold" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-5 fw-bold" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section
+        style="height: 120px"
+        class="my-3 d-flex flex-column justify-content-center align-items-center"
+      >
+        <h3 class="fs-1 heading mb-4">Search Your Player</h3>
+        <div class="input-group mb-3 w-50 mx-auto">
+          <input
+            id="search-field"
+            type="text"
+            class="form-control"
+            placeholder="Player Initials..."
+            aria-label="Recipient's username"
+            aria-describedby="button-addon2"
+          />
+          <button
+            onclick="searchPlayers()"
+            class="btn btn-outline-secondary"
+            type="button"
+            id="button-addon2"
+          >
+            Search
+          </button>
+        </div>
+      </section>
+      <section class="container-fluid row mx-auto d-flex justify-content-evenly">
+        <div
+          id="playersContainer"
+          class="col col-md-8 row row-cols-1 row-cols-md-3 g-4 card-group"
+        ></div>
+        <div id="cart" class="col col-md-4 mt-5 bg-body-tertiary rounded-4">
+          <h3 class="fs-2 fw-bold text-center mt-4">Cart</h3>
+          <hr>
+          <p class="fs-4 text-center">Total Player Added: 0</p>
+        </div>
+      </section>
+      <section class="modal_container">
+        <div class="modal fade" id="playerDetails" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body" id="playerDetailsBody">
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="text-center p-5 mt-4">
+      <p class="fs-5">Copyright @2024</p>
+      <p class="fs-3">Mohammad Sanaullah Rabby</p>
+      <p class="d-flex justify-content-center">
+        <i class="fa-brands fa-github me-3 fs-4"></i>
+        <i class="fa-brands fa-linkedin fs-4"></i>
+      </p>
+    </footer>
+    <script src="main.js"></script>
+    <script src="files/bootstrap.bundle.js"></script>
+  </body>
+</html>
